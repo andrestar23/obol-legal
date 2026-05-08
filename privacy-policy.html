@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Obol</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #111008;
+      color: #faf7ed;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 2rem; color: #f0b429; margin-bottom: 8px; }
+    .subtitle { color: #6b6347; font-size: 0.9rem; margin-bottom: 40px; }
+    h2 { font-size: 1.1rem; color: #f0b429; margin: 32px 0 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+    p { margin-bottom: 12px; color: #d4cfbf; }
+    ul { margin: 8px 0 12px 20px; color: #d4cfbf; }
+    li { margin-bottom: 6px; }
+    a { color: #f0b429; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .divider { border: none; border-top: 1px solid #2a2518; margin: 32px 0; }
+    .footer { margin-top: 48px; font-size: 0.85rem; color: #6b6347; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Obol – App di finanza personale &nbsp;·&nbsp; Ultimo aggiornamento: maggio 2025</p>
+
+    <p>
+      Questa Privacy Policy descrive come Obol ("l'app", "noi") raccoglie, utilizza e protegge i dati
+      personali degli utenti. Utilizzando l'app, accetti le pratiche descritte in questo documento.
+    </p>
+
+    <hr class="divider" />
+
+    <h2>1. Dati raccolti</h2>
+    <p>Obol raccoglie solo i dati strettamente necessari al funzionamento del servizio:</p>
+    <ul>
+      <li><strong>Dati di account:</strong> indirizzo email e, in caso di accesso tramite Apple, il nome fornito da Apple.</li>
+      <li><strong>Dati finanziari:</strong> transazioni (importo, data, categoria, note), voci di patrimonio e dati di investimento inseriti manualmente dall'utente.</li>
+      <li><strong>Dati biometrici:</strong> se l'utente abilita Face ID / Touch ID, un token di sessione cifrato viene salvato localmente sul dispositivo tramite il Secure Enclave di iOS. Nessun dato biometrico grezzo viene mai trasmesso o archiviato sui nostri server.</li>
+    </ul>
+    <p>Non raccogliamo dati di posizione, contatti, identificatori pubblicitari o qualsiasi altro dato non elencato sopra.</p>
+
+    <h2>2. Come utilizziamo i dati</h2>
+    <p>I dati raccolti vengono utilizzati esclusivamente per:</p>
+    <ul>
+      <li>Fornire le funzionalità dell'app (tracciamento spese, patrimonio, investimenti).</li>
+      <li>Autenticare l'utente in modo sicuro.</li>
+      <li>Sincronizzare i dati tra dispositivi dello stesso account.</li>
+    </ul>
+    <p>Non utilizziamo i dati per pubblicità, profilazione o finalità commerciali.</p>
+
+    <h2>3. Archiviazione e sicurezza</h2>
+    <p>
+      I dati sono archiviati su <strong>Supabase</strong>, una piattaforma cloud con crittografia in transito (TLS)
+      e a riposo. L'accesso ai dati è protetto tramite Row Level Security (RLS): ogni utente può accedere
+      solo ai propri dati.
+    </p>
+    <p>
+      Le credenziali di sessione sono conservate nel Keychain cifrato del dispositivo tramite
+      <code>expo-secure-store</code>.
+    </p>
+
+    <h2>4. Condivisione con terze parti</h2>
+    <p>
+      Non vendiamo, affittiamo né condividiamo i tuoi dati personali con terze parti a scopo commerciale.
+      I dati vengono trasmessi a Supabase esclusivamente per l'archiviazione e la sincronizzazione.
+    </p>
+    <p>
+      In caso di accesso tramite Apple, il processo di autenticazione è gestito da Apple Inc. secondo
+      le proprie <a href="https://www.apple.com/legal/privacy/it/" target="_blank">linee guida sulla privacy</a>.
+    </p>
+
+    <h2>5. Conservazione dei dati</h2>
+    <p>
+      I dati vengono conservati finché l'account è attivo. L'utente può richiedere la cancellazione
+      dell'account e di tutti i dati associati in qualsiasi momento contattandoci all'indirizzo email
+      indicato in fondo a questa pagina.
+    </p>
+
+    <h2>6. Diritti degli utenti (GDPR)</h2>
+    <p>Se risiedi nell'Unione Europea, hai diritto a:</p>
+    <ul>
+      <li>Accedere ai tuoi dati personali.</li>
+      <li>Rettificare dati inesatti.</li>
+      <li>Richiedere la cancellazione dei tuoi dati ("diritto all'oblio").</li>
+      <li>Portabilità dei dati.</li>
+      <li>Opporti al trattamento.</li>
+    </ul>
+    <p>Per esercitare questi diritti, contattaci all'indirizzo email riportato di seguito.</p>
+
+    <h2>7. Privacy dei minori</h2>
+    <p>
+      Obol non è destinata a utenti di età inferiore a 13 anni. Non raccogliamo consapevolmente
+      dati personali di minori.
+    </p>
+
+    <h2>8. Modifiche a questa Privacy Policy</h2>
+    <p>
+      Eventuali modifiche sostanziali verranno comunicate tramite aggiornamento della data in cima
+      a questo documento. L'uso continuato dell'app dopo le modifiche costituisce accettazione
+      della nuova policy.
+    </p>
+
+    <hr class="divider" />
+
+    <h2>Contatti</h2>
+    <p>
+      Per domande o richieste relative alla privacy:<br />
+      <a href="mailto:obol.personalfinance@gmail.com">obol.personalfinance@gmail.com</a>
+    </p>
+
+    <div class="footer">
+      © 2025 Obol. Tutti i diritti riservati.
+    </div>
+
+  </div>
+</body>
+</html>
