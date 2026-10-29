@@ -30,7 +30,7 @@
   <div class="container">
 
     <h1>Privacy Policy</h1>
-    <p class="subtitle">Obol – App di finanza personale &nbsp;·&nbsp; Ultimo aggiornamento: maggio 2026</p>
+    <p class="subtitle">Obol – App di finanza personale &nbsp;·&nbsp; Ultimo aggiornamento: ottobre 2026</p>
 
     <p>
       Questa Privacy Policy descrive come Obol ("l'app", "noi") raccoglie, utilizza e protegge i dati
@@ -45,8 +45,12 @@
       <li><strong>Dati di account:</strong> indirizzo email e, in caso di accesso tramite Apple, il nome fornito da Apple.</li>
       <li><strong>Dati finanziari:</strong> transazioni (importo, data, categoria, note), voci di patrimonio e dati di investimento inseriti manualmente dall'utente.</li>
       <li><strong>Dati biometrici:</strong> se l'utente abilita Face ID / Touch ID, un token di sessione cifrato viene salvato localmente sul dispositivo tramite il Secure Enclave di iOS. Nessun dato biometrico grezzo viene mai trasmesso o archiviato sui nostri server.</li>
+      <li><strong>Dati di utilizzo (solo con il tuo consenso):</strong> statistiche anonime su come viene usata l'app, descritte in dettaglio nella sezione 3.</li>
     </ul>
-    <p>Non raccogliamo dati di posizione, contatti, identificatori pubblicitari o qualsiasi altro dato non elencato sopra.</p>
+    <p>
+      Non raccogliamo dati di posizione precisa, contatti, identificatori pubblicitari (IDFA) o qualsiasi
+      altro dato non elencato sopra.
+    </p>
 
     <h2>2. Come utilizziamo i dati</h2>
     <p>I dati raccolti vengono utilizzati esclusivamente per:</p>
@@ -54,10 +58,50 @@
       <li>Fornire le funzionalità dell'app (tracciamento spese, patrimonio, investimenti).</li>
       <li>Autenticare l'utente in modo sicuro.</li>
       <li>Sincronizzare i dati tra dispositivi dello stesso account.</li>
+      <li>Solo se hai dato il consenso: capire quali funzionalità vengono usate, dove si incontrano errori e come migliorare l'app.</li>
     </ul>
-    <p>Non utilizziamo i dati per pubblicità, profilazione o finalità commerciali.</p>
+    <p>
+      Non utilizziamo i dati per pubblicità, profilazione a fini di marketing o finalità commerciali,
+      e non li vendiamo a nessuno.
+    </p>
 
-    <h2>3. Archiviazione e sicurezza</h2>
+    <h2>3. Statistiche di utilizzo (analytics)</h2>
+    <p>
+      Per migliorare l'app utilizziamo <strong>Mixpanel</strong>, un servizio di analisi dell'utilizzo.
+      Le statistiche vengono raccolte <strong>solo dopo che hai dato il tuo consenso</strong> all'interno
+      dell'app: finché non lo dai, nessun dato di utilizzo viene inviato.
+    </p>
+    <p>Cosa raccogliamo:</p>
+    <ul>
+      <li><strong>Azioni nell'app:</strong> ad esempio "transazione aggiunta", "schermata aperta", "accesso riuscito", con dettagli tecnici come il tipo di operazione (entrata/uscita), la schermata di provenienza o il codice di un eventuale errore.</li>
+      <li><strong>Riepiloghi del profilo:</strong> data di registrazione, numero di categorie, voci di patrimonio e investimenti creati, e se l'opzione "nascondi importi" è attiva.</li>
+      <li><strong>Patrimonio solo per fasce:</strong> il patrimonio totale non viene mai inviato come cifra esatta, ma solo come fascia (0–10k, 10k–50k, 50k–250k, oltre 250k €).</li>
+      <li><strong>Dati tecnici del dispositivo:</strong> modello, sistema operativo, versione dell'app e Paese approssimativo ricavato dall'indirizzo IP (l'indirizzo IP non viene conservato).</li>
+    </ul>
+    <p>Cosa <strong>non</strong> raccogliamo mai tramite Mixpanel:</p>
+    <ul>
+      <li>email, nome, numero di telefono, codice fiscale o IBAN;</li>
+      <li>importi esatti di transazioni, patrimonio o investimenti;</li>
+      <li>descrizioni, note, nomi di categorie, banche o investimenti, né qualsiasi altro testo che scrivi.</li>
+    </ul>
+    <p>
+      Per collegare le statistiche allo stesso account usiamo un codice casuale (pseudonimo), che non
+      contiene e non rivela la tua identità.
+    </p>
+    <p>
+      <strong>Base giuridica:</strong> il tuo consenso (art. 6, par. 1, lett. a GDPR). Puoi revocarlo in
+      qualsiasi momento dalle impostazioni del profilo nell'app: da quel momento l'invio si interrompe e
+      i dati di utilizzo salvati sul dispositivo vengono cancellati. La revoca non ha effetti sul
+      funzionamento dell'app.
+    </p>
+    <p>
+      I dati di utilizzo sono archiviati sui server europei di Mixpanel (residenza dati UE). Mixpanel, Inc.
+      ha sede negli Stati Uniti e agisce come nostro responsabile del trattamento sulla base di un accordo
+      sul trattamento dei dati che include le Clausole Contrattuali Standard della Commissione Europea.
+      Maggiori informazioni nella <a href="https://mixpanel.com/legal/privacy-policy/" target="_blank">privacy policy di Mixpanel</a>.
+    </p>
+
+    <h2>4. Archiviazione e sicurezza</h2>
     <p>
       I dati sono archiviati su <strong>Supabase</strong>, una piattaforma cloud con crittografia in transito (TLS)
       e a riposo. L'accesso ai dati è protetto tramite Row Level Security (RLS): ogni utente può accedere
@@ -68,24 +112,33 @@
       <code>expo-secure-store</code>.
     </p>
 
-    <h2>4. Condivisione con terze parti</h2>
+    <h2>5. Condivisione con terze parti</h2>
     <p>
       Non vendiamo, affittiamo né condividiamo i tuoi dati personali con terze parti a scopo commerciale.
-      I dati vengono trasmessi a Supabase esclusivamente per l'archiviazione e la sincronizzazione.
+      Ci avvaliamo solo dei seguenti fornitori, ciascuno per lo scopo indicato:
     </p>
+    <ul>
+      <li><strong>Supabase:</strong> archiviazione e sincronizzazione dei dati dell'account.</li>
+      <li><strong>Mixpanel:</strong> statistiche di utilizzo, solo con il tuo consenso (vedi sezione 3).</li>
+    </ul>
     <p>
       In caso di accesso tramite Apple, il processo di autenticazione è gestito da Apple Inc. secondo
       le proprie <a href="https://www.apple.com/legal/privacy/it/" target="_blank">linee guida sulla privacy</a>.
     </p>
 
-    <h2>5. Conservazione dei dati</h2>
+    <h2>6. Conservazione dei dati</h2>
     <p>
       I dati vengono conservati finché l'account è attivo. L'utente può richiedere la cancellazione
       dell'account e di tutti i dati associati in qualsiasi momento contattandoci all'indirizzo email
       indicato in fondo a questa pagina.
     </p>
+    <p>
+      I dati di utilizzo raccolti tramite Mixpanel vengono conservati per un massimo di
+      <strong>24 mesi</strong> e cancellati insieme all'account se ne richiedi
+      l'eliminazione.
+    </p>
 
-    <h2>6. Diritti degli utenti (GDPR)</h2>
+    <h2>7. Diritti degli utenti (GDPR)</h2>
     <p>Se risiedi nell'Unione Europea, hai diritto a:</p>
     <ul>
       <li>Accedere ai tuoi dati personali.</li>
@@ -93,16 +146,18 @@
       <li>Richiedere la cancellazione dei tuoi dati ("diritto all'oblio").</li>
       <li>Portabilità dei dati.</li>
       <li>Opporti al trattamento.</li>
+      <li>Revocare in qualsiasi momento il consenso alle statistiche di utilizzo, direttamente dall'app.</li>
+      <li>Proporre reclamo al Garante per la protezione dei dati personali.</li>
     </ul>
     <p>Per esercitare questi diritti, contattaci all'indirizzo email riportato di seguito.</p>
 
-    <h2>7. Privacy dei minori</h2>
+    <h2>8. Privacy dei minori</h2>
     <p>
       Obol non è destinata a utenti di età inferiore a 13 anni. Non raccogliamo consapevolmente
       dati personali di minori.
     </p>
 
-    <h2>8. Modifiche a questa Privacy Policy</h2>
+    <h2>9. Modifiche a questa Privacy Policy</h2>
     <p>
       Eventuali modifiche sostanziali verranno comunicate tramite aggiornamento della data in cima
       a questo documento. L'uso continuato dell'app dopo le modifiche costituisce accettazione
